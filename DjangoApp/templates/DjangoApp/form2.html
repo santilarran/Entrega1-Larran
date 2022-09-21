@@ -1,0 +1,23 @@
+{% extends "DjangoApp/padre.html" %}
+
+
+{% load static %} 
+
+{% block titulo %}
+
+<form action="" method="POST"> {% csrf_token %}
+
+    <table>
+        
+        {{form2.as_table}}
+    
+    </table>
+    
+    <input type="submit" value="Enviar">
+
+</form>
+
+{% endblock %}
+
+
+
